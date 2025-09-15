@@ -37,3 +37,8 @@ jobs:
         with:
           name: sbom
           path: sbom.json
+
+      - name: Run Semgrep
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: auto
